@@ -1,0 +1,67 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.login-card{
+    width: fit-content;
+    height: fit-content;
+}
+
+.input-wrapper{
+    position: relative;;
+}
+.input-label{
+    position: absolute;
+    margin-top: -0.5rem;
+    z-index: 1;
+}
+
+.SSOComponent{
+    width: 25vw;
+    margin-left: 1rem;
+    text-align: center;
+    height: fit-content;
+}
+
+.SSOButton{
+    width: 100%;
+    height: 3rem;
+    color: white; 
+    padding: 0; 
+    margin-bottom: 0.5rem;
+    border-radius: 2px;
+    border: 1px solid blue; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.SSOButton-icon{
+    width: 15%;
+    height: 100%;
+}
+.SSOButton-icon img{
+    width: 100%;
+    height: 100%;
+}
+.SSOButton-text{
+    width: 85%;
+}
+.SSOButton.google{
+    background-color: dodgerblue;
+}
+.SSOButton.facebook{
+    background-color: #3b5998;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
