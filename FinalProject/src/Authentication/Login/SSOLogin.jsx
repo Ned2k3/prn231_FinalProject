@@ -16,6 +16,7 @@ const SSOLogin = () => {
 
   return (
     <div className='SSOComponent'>
+      <p>Đăng nhập với SSO</p>
       <button className='SSOButton google' onClick={() => handleGoogleLogin}>
         <div className='SSOButton-icon'>
           <img src={google_pic}></img>

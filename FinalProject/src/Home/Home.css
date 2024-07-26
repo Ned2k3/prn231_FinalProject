@@ -1,0 +1,281 @@
+.content{
+    flex: 1;
+}
+.footer{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100px;
+    padding: 1rem 0;
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand{
+    font-family: 'Poetsen One', sans-serif; 
+    color: #162c5b;
+}
+
+.navbar{
+    padding: 1rem 0; 
+    height: fit-content;
+    max-height: 80px;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+.navbar-brand {
+    white-space: normal; 
+    text-align: center;
+    word-break: break-all;
+}
+
+.dropdown-btn{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.avt{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.dropdown-btn:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Classroom card */
+.mcard{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    height: 20rem;
+    padding: 0;
+    color: white;
+}
+.mcard:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.card-header{
+    width: 100%;
+    height: 30%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+.card-body{
+    height: 50%;
+}
+.card-footer{
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.card-header-classname{
+    font-size: 1.5rem;
+}
+.card-header-teachername{
+    font-size: 1rem;
+}
+.card-header-teacherimage{
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.card-header-teacherimage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.home-body{
+    margin-top: 80px;
+}
+.home-body-row{
+    margin: 0;
+}
+.home-body-classrooms{
+    padding: 2rem;
+    height: fit-content;
+}
+.home-body-menu{
+    width: 100%;
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+.home-body-menu-section{
+    padding: 1rem;
+    padding-left: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.home-body-menu-section-tab{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    padding: 0.25rem 0 0.25rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0 20px 20px 0;
+    color: black;
+}
+.home-body-menu-section-tab.icon{
+    padding-right: 5px;
+}
+.home-body-menu-section-tab.text{
+    padding-right: 5px;
+}
+
+.home-body-menu-section-tab:hover{
+    background-color: lightcyan;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    position: relative;
+}
+.popup-content-user-image{
+    position: absolute;
+    top: -30%;
+    left: -50%;
+    z-index: -1;
+    width: 250px;
+    height: 250px;
+}
+.popup-content-user-image img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-content-section{
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+.popup-content-section.class-code{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.popup-content-section.background-select{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.background-demo{
+    border-radius: 8px;
+    height: 80px;
+    width: 85%;
+}
+.background-demo-icon{
+    font-size: 1.5rem;
+    width: 15%;
+    display: flex;
+    justify-content: end;
+}
+.background-demo-icon i:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+}
+.popup-footer{
+    display: flex;
+    justify-content: end;
+}
+
+.input-class{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+.input-class.selected{
+    padding-bottom: 0;
+    border-color: dodgerblue;
+}
+.input-class:invalid{
+    border-color: red;
+}
+
+.close-btn, .join-btn, .save-btn{
+    border: none;
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.join-btn{
+    color: rgba(0, 0, 0, 0.5);
+}
+.join-btn.enabled{
+    color: dodgerblue;
+}
+.join-btn.enabled:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+.save-btn{
+    color: dodgerblue;
+}
+.save-btn:disabled{
+    color: rgba(0, 0, 0, 0.5);
+}
+.close-btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-btn.show{
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu{
+    left: -120px;
+    top: 80%;
+    padding: 0.5rem 0;
+    width: fit-content;
+}
+.dropdown-item{
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    margin: 0;
+}
+.dropdown-item:hover{
+    cursor: pointer;
+}
